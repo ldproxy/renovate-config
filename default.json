@@ -1,9 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", ":disableDependencyDashboard"],
+  "extends": ["config:best-practices", ":disableDependencyDashboard"],
   "schedule": ["after 10pm", "before 6am"],
   "timezone": "Europe/Berlin",
-  "configMigration": true,
   "reviewersFromCodeOwners": true,
   "prHourlyLimit": 5,
   "branchNameStrict": true,
