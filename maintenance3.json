@@ -1,0 +1,4 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": ["$default", "maintenance-{{arg0}}", "maintenance-{{arg1}}", "maintenance-{{arg2}}"]
+}
