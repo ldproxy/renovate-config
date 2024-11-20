@@ -21,7 +21,7 @@
     },
     {
       "groupName": "plugins",
-      "matchFileNames": ["gradle/plugins.versions.toml", "settings.gradle"],
+      "matchFileNames": ["**/gradle/plugins.versions.toml", "**/settings.gradle"],
       "labels": ["build-dependencies"]
     }
   ]
