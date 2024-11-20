@@ -5,8 +5,8 @@
   "includePaths": [
     "gradle/libs.versions.toml",
     "gradle/plugins.versions.toml",
-    "gradle/wrapper/gradle-wrapper.properties",
-    "settings.gradle"
+    "**/gradle/wrapper/gradle-wrapper.properties",
+    "**/settings.gradle"
   ],
   "baseBranches": ["$default"],
   "packageRules": [
