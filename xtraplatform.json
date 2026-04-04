@@ -7,7 +7,9 @@
     "gradle/libs.versions.toml",
     "gradle/plugins.versions.toml",
     "**/gradle/wrapper/gradle-wrapper.properties",
-    "**/settings.gradle"
+    "**/settings.gradle",
+    "**/Dockerfile",
+    ".woodpecker/**/*.yml"
   ],
   "baseBranches": ["$default"],
   "packageRules": [
