@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["ldproxy/renovate-config"],
-  "enabledManagers": ["gradle", "gradle-wrapper"],
+  "enabledManagers": ["gradle", "gradle-wrapper", "dockerfile", "woodpecker"],
   "includePaths": [
     "gradle/libs.versions.toml",
     "gradle/plugins.versions.toml",
