@@ -1,19 +1,29 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["ldproxy/renovate-config"],
-  "enabledManagers": ["gradle", "gradle-wrapper", "dockerfile", "woodpecker", "npm"],
+  "enabledManagers": ["gradle", "gradle-wrapper", "dockerfile", "woodpecker", "npm", "custom.regex"],
   "pinDigests": true,
   "includePaths": [
     "gradle/libs.versions.toml",
     "gradle/plugins.versions.toml",
     "**/gradle/wrapper/gradle-wrapper.properties",
-    "**/settings.gradle",
+    "**/*.gradle",
     "**/Dockerfile",
     ".woodpecker/**/*.yml",
     "**/package.json"
   ],
   "baseBranches": ["$default"],
   "packageRules": [
+    {
+      "matchManagers": ["gradle"],
+      "matchFileNames": ["**/*.gradle"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["gradle"],
+      "matchFileNames": ["**/settings.gradle"],
+      "enabled": true
+    },
     {
       "matchBaseBranches": ["/^maintenance-.*/"],
       "matchUpdateTypes": ["major", "minor"],
